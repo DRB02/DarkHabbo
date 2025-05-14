@@ -1,4 +1,5 @@
-# HabboNFT Snippets
-Some snippets of my HabboNFT bot.
+# HabboNFT DarkHabbo
+Really bad quality.
+Spaghetti code.
 
-Full private bot with more feautures is available in the https://twitter.com/furniapp discord. 
+Python HabboNFT bot I written once. Not being maintained anymore.
