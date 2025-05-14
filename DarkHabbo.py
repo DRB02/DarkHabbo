@@ -134,8 +134,6 @@ async def on_message(message):
                         value="Just resets the nickname to Dark Habbo. Was experimenting with this and left it in.", inline=False)
         embed.add_field(name=",json",
                         value="Creates and downloads a json of all items.", inline=False)
-        embed.add_field(name="**mystery command**",
-                        value=",dylan", inline=False)
         await message.channel.send(embed=embed)
 
     # cheapest
@@ -890,19 +888,6 @@ async def on_message(message):
         await message.guild.me.edit(nick="Dark Habbo")
     if message.content.lower() == ',ping':
         await message.channel.send(message.author.id)
-    if message.content.lower() == ',dylan':
-        rand = random.random()
-        if rand < 0.001:  # 0.1% chance
-            link_message = await message.channel.send("You found a legendary Dylan! 0.1% https://media.discordapp.net/attachments/999637575818039376/1247304055315890276/boobhat.jpg?ex=665f89ec&is=665e386c&hm=f372a9854fb964155f06be6ca223496226768f26a948f287e96d5b66f0d9e28d&=&format=webp&width=702&height=936")
-        elif rand < 0.101:  # 10% chance
-            link_message = await message.channel.send("You found a rare Dylan! 10% \nhttps://media.discordapp.net/attachments/999637575818039376/1247301859761193034/IMG-20230605-WA0004.jpg?ex=665f87e1&is=665e3661&hm=9c58fe36dbe94597fc808176bd0452829da0576a0dd1a7f80061c4c2dc2669bc&=&format=webp&width=526&height=936")
-        else:  # Remaining 89.9% chance
-            link_message = await message.channel.send("https://media.discordapp.net/attachments/955933694189789234/1139988782645522432/IMG_20230812_123619.jpg?width=526&height=701")
-
-        # anti bully protection
-        command_message_id = message.id
-        sleep_duration = random.randint(5, 15)
-        time.sleep(sleep_duration)
 
         try:
             command_message = await message.channel.fetch_message(command_message_id)
